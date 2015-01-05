@@ -2,8 +2,10 @@
 // @name        yandex
 // @namespace   /
 // @include     http://yandex.ru/
-// @version     0.1
+// @version     0.1.1
 // @grant       none
+// @downloadURL https://github.com/bondden/YandexAdBlocker/raw/master/yandex.user.js
+// @updateURL   https://github.com/bondden/YandexAdBlocker/raw/master/yandex.user.js
 // ==/UserScript==
 
 function init(){
