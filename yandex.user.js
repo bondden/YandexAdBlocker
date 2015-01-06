@@ -2,13 +2,13 @@
 // @name        yandex
 // @namespace   /
 // @include     http://yandex.ru/
-// @version     0.1.1
+// @version     0.1.2
 // @grant       none
 // @downloadURL https://github.com/bondden/YandexAdBlocker/raw/master/yandex.user.js
 // @updateURL   https://github.com/bondden/YandexAdBlocker/raw/master/yandex.user.js
 // ==/UserScript==
 
-function init(){
+function bondden_gInit(){
 	
 	var promoText=document.getElementsByClassName('b-yabrowser-promo__text').item(0);
 	if(promoText)promoText.parentNode.removeChild(promoText);
@@ -33,9 +33,9 @@ function init(){
 	
 }
 
-var readyStateCheckInterval = setInterval(function(){
-	if(document.readyState === "complete"){
-		init();
-		clearInterval(readyStateCheckInterval);
+var bondden_gRi = setInterval(function(){
+	if(document.readyState==="complete"){
+		bondden_gInit();
+		clearInterval(bondden_gRi);
 	}
 },10);
